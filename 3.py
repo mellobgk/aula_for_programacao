@@ -1,5 +1,11 @@
-n = int(input("digite um número inteiro: "))
+# Escreva um programa que leia diversos números inteiros positivos e exiba o dobro de cada um. A leitura deve ser interrompida quando for digitado um número negativo.
 
-if n % 2 == 0:
-    for i in range(0, n + 1, 2):
-        print(i)
+numero = 0
+
+for i in range(1000): #loop innfinito
+    numero = int(input("digite um número : "))
+
+    if numero < 0:
+        print("programa encerrado.")
+        break #interrompe o loop
+    print("o dobro de", numero, "é : ", numero * 2)
